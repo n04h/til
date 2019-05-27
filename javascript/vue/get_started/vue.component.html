@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <ol>
+                <!-- todos 配列にある各 todo に対して todo-item コンポーネントのインスタンスを作成する -->
+                <todo-item
+                    v-for='item in groceryList'
+                    v-bind:todo="item"
+                    v-bind:key="item.id"></todo-item>
+            </ol>
+        </div>
+
+        <script>
+            Vue.component('todo-item', {
+                props: ['todo'],
+                template: '<li>{{ todo.text }}</li>'
+            })
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    groceryList: [
+                        { id: 0, text : 'hey' },
+                        { id: 1, text : 'heyhey' },
+                        { id: 2, text : 'heyheyhey' },
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>

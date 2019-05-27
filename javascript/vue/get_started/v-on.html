@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Fooooooooooooooooooo!'
+                },
+                methods: {
+                    reverseMessage: function () {
+                        this.message = this.message.split('').reverse().join('')
+                    }
+                },
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <!-- app.seen の真偽値を変えることで表示非表示を帰れる -->
+            <span v-if="seen">
+                俺が見えるか小僧
+            </span>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    seen: true
+                }
+            });
+        </script>
+    </body>
+</html>

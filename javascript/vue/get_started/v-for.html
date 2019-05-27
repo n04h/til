@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <!-- app.todos.push({ text: 'wake up' }) で追加もできる -->
+            <ol>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ol>
+        </div>
+
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    todos: [
+                        { text: 'wake up' },
+                        { text: 'sleep twice' },
+                        { text: 'wake up' },
+                        { text: 'sleep three times' },
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>

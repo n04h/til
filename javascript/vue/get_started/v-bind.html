@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <!-- app.title = "Update title." とコンソールに打ち込んむとTitle属性の値を変えれる -->
+            <span v-bind:title="title">
+                Focus me;)
+            </span>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    title: 'You loaded this page on ' + new Date().toLocaleString()
+                }
+            });
+        </script>
+    </body>
+</html>

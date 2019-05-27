@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Lesson1</title>
+        <!-- 本番バージョン: サイズと速度のために最適化されています -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!-- 開発バージョン: 便利なコンソールの警告が含まれています -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <!-- app.message = "Hello world!" とコンソールに打ち込んで値を変えれる -->
+            {{ message }}
+        </div>
+        <div id="app2">
+            <!-- app2.message = "Update title." とコンソールに打ち込んむとTitle属性の値を変えれる -->
+            <span v-bind:title="message">
+                Focus me;)
+            </span>
+        </div>
+        <div id="app3">
+            <!-- app3.seen の真偽値を変えることで表示非表示を帰れる -->
+            <span v-if="seen">
+                俺が見えるか小僧
+            </span>
+        </div>
+        <div id="app4">
+            <!-- app4.todos.push({ text: 'wake up' }) で追加もできる -->
+            <ol>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ol>
+        </div>
+        <div id="app5">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+        <div id="app6">
+            <p>{{ message }}</p>
+            <input v-model="message">
+        </div>
+        <div id="app7">
+            <ol>
+                <!-- todos 配列にある各 todo に対して todo-item コンポーネントのインスタンスを作成する -->
+                <todo-item
+                    v-for='item in groceryList'
+                    v-bind:todo="item"
+                    v-bind:key="item.id"></todo-item>
+            </ol>
+        </div>
+
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!'
+                }
+            });
+            var app2 = new Vue({
+                el: '#app2',
+                data: {
+                    message: 'You loaded this page on ' + new Date().toLocaleString()
+                }
+            });
+            var app3 = new Vue({
+                el: '#app3',
+                data: {
+                    seen: true
+                }
+            });
+            var app4 = new Vue({
+                el: '#app4',
+                data: {
+                    todos: [
+                        { text: 'wake up' },
+                        { text: 'sleep twice' },
+                        { text: 'wake up' },
+                        { text: 'sleep three times' },
+                    ]
+                }
+            });
+            var app5 = new Vue({
+                el: '#app5',
+                data: {
+                    message: 'Fooooooooooooooooooo!'
+                },
+                methods: {
+                    reverseMessage: function () {
+                        this.message = this.message.split('').reverse().join('')
+                    }
+                },
+            });
+            var app6 = new Vue({
+                el: '#app6',
+                data: {
+                    message: 'NANIKA IRERO'
+                }
+            });
+
+            Vue.component('todo-item', {
+                props: ['todo'],
+                template: '<li>{{ todo.text }}</li>'
+            })
+            var app7 = new Vue({
+                el: '#app7',
+                data: {
+                    groceryList: [
+                        { id: 0, text : 'hey' },
+                        { id: 1, text : 'heyhey' },
+                        { id: 2, text : 'heyheyhey' },
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>
