@@ -64,3 +64,32 @@ end
 `before do ... end`で囲まれた部分は`example`の実行前に毎回呼ばれる。
 `before`ブロックの中では、テストを実行する前の共通処理やデータのセットアップ等を行うことが多い。
 `describe`や`context`がネストしている場合は、親子関係に応じて`before`が順番に呼ばれる。(親→子の順番)
+
+## インスタンス変数のかわりに let を使う
+
+letの利点について：https://qiita.com/jnchito/items/cdd9eef2ed193267c651
+
+```ruby
+describe User do
+  describe '#greet' do
+    let(:user) { User.new(params) }
+    let(:params) { { name: 'たろう', age: age } }
+    context '12歳以下の場合' do
+      let(:age) { 12 }
+      it 'ひらがなで答えること' do
+        expect(user.greet).to eq 'ぼくはたろうだよ。'
+      end
+    end
+    context '13歳以上の場合' do
+      let(:age) { 13 }
+      it '漢字で答えること' do
+        expect(user.greet).to eq '僕はたろうです。'
+      end
+    end
+  end
+end
+```
+
+`let(:foo) { ... }`のように書くと、`{ ... }`の中の値が`foo`として参照できる。
+`let`は「before + インスタンス変数」を使うときとは異なり、 __遅延評価される__ という特徴がある。
+すなわち、`let`は必要になる瞬間まで呼び出されない。
