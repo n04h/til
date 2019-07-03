@@ -93,3 +93,30 @@ end
 `let(:foo) { ... }`のように書くと、`{ ... }`の中の値が`foo`として参照できる。
 `let`は「before + インスタンス変数」を使うときとは異なり、 __遅延評価される__ という特徴がある。
 すなわち、`let`は必要になる瞬間まで呼び出されない。
+
+## subject を使ってテスト対象のオブジェクトを1箇所にまとめる
+
+日本語で「主語」や「対象」という意味。
+テスト対象のオブジェクト（またはメソッドの実行結果）が明確に一つに決まっている場合は、`subject`という機能を使うとテストコードが綺麗になる。
+
+```ruby
+describe User do
+  describe '#greet' do
+    let(:user) { User.new(params) }
+    let(:params) { { name: 'たろう', age: age } }
+    subject { user.greet }
+    context '12歳以下の場合' do
+      let(:age) { 12 }
+      it 'ひらがなで答えること' do
+        is_expected.to eq 'ぼくはたろうだよ。'
+      end
+    end
+    context '13歳以上の場合' do
+      let(:age) { 13 }
+      it { is_expected.to eq '僕はたろうです。' } # itをこのように書くこともできる
+    end
+  end
+end
+```
+
+今まで`expect(user.greet).to eq 'ぼくはたろうだよ。'`と書いていた部分が`is_expected.to eq 'ぼくはたろうだよ。'`と簡潔にできる。
