@@ -120,3 +120,24 @@ end
 ```
 
 今まで`expect(user.greet).to eq 'ぼくはたろうだよ。'`と書いていた部分が`is_expected.to eq 'ぼくはたろうだよ。'`と簡潔にできる。
+
+## it のエイリアス ＝ example と specify
+
+RSpecには`it`の他に全く同じ役割の`example`と`specify`がある。
+これら3つのメソッドはエイリアスの関係にあるので、以下のテストコードは内部的には全く同じ意味になる。
+なぜ3種類も同じメソッドがあるのかというと、自然な英文を作るため。
+日本語を使う場合は使い分けせずに`it`で統一したほうがいい。
+
+```ruby
+it '1 + 1 は 2 になること' do
+  expect(1 + 1).to eq 2
+end
+
+specify '1 + 1 は 2 になること' do
+  expect(1 + 1).to eq 2
+end
+
+example '1 + 1 は 2 になること' do
+  expect(1 + 1).to eq 2
+end
+```
