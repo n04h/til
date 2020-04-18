@@ -19,7 +19,7 @@ theme:
 
 # Navigation
 nav:
-  - Home: index.mdx
+  - Home: index.md
 
 # Options
 extra:
