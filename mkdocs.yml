@@ -1,0 +1,40 @@
+# Project information
+site_name: "N04h til"
+site_description: "N04h Today I learned"
+site_author: "N04h"
+site_url: "https://til.n04h.jp/"
+
+# Repository
+repo_name: "Sateright/docs.sateright.com"
+repo_url: "https://github.com/Sateright/docs.sateright.com"
+
+# Copyright
+copyright: "Copyright &copy; N04h"
+
+# Documentation and theme
+docs_dir: "til"
+theme:
+  name: "material"
+  language: "ja"
+
+# Navigation
+nav:
+  - Home: index.mdx
+
+# Options
+extra:
+  social:
+    - type: "github"
+      link: "https://github.com/setsunaMC"
+    - type: "twitter"
+      link: "https://twitter.com/Noah_stn"
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - fontawesome_markdown
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+  - codehilite:
+      linenums: true
