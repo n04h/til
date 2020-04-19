@@ -24,9 +24,9 @@ nav:
 # Options
 extra:
   social:
-    - type: "github"
+    - icon: "fontawesome/brands/github-alt"
       link: "https://github.com/setsunaMC"
-    - type: "twitter"
+    - icon: "fontawesome/brands/twitter"
       link: "https://twitter.com/Noah_stn"
   font:
     text: "Noto Sans JP"
