@@ -6,6 +6,8 @@ RUN pip install --upgrade pip \
   && pip install fontawesome_markdown \
   && pip install plantuml-markdown
 
+RUN python --version
+
 WORKDIR /root
 
 CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
