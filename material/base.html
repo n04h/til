@@ -143,6 +143,7 @@
           {% endblock %}
           <div class="md-content">
             <article class="md-content__inner md-typeset">
+              {% include "adsense.html" %}
               {% block content %}
                 {% if page.edit_url %}
                   <a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="md-content__button md-icon">
