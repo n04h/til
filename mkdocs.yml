@@ -16,8 +16,18 @@ copyright: "Copyright &copy; N04h"
 # Documentation and theme
 docs_dir: "til"
 theme:
-  name: "material"
+  name: null
+  custom_dir: "material"
   language: "ja"
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png
   features:
     - tabs
 
