@@ -11,7 +11,7 @@
         <meta name="description" content="N04h Today I learned">
       
       
-        <link rel="canonical" href="https://til.n04h.jp/ruby/gem/">
+        <link rel="canonical" href="https://til.n04h.jp/ruby/rspec_basic/">
       
       
         <meta name="author" content="N04h">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Gemについて - N04h Today I learned</title>
+        <title>Rspecの基本 - N04h Today I learned</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gem" class="md-skip">
+        <a href="#rspec" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -106,7 +106,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Gemについて
+              Rspecの基本
             
           </span>
         </div>
@@ -353,6 +353,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../gem/" title="Gemについて" class="md-nav__link">
+      Gemについて
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -364,14 +376,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Gemについて
+        Rspecの基本
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Gemについて" class="md-nav__link md-nav__link--active">
-      Gemについて
+    <a href="./" title="Rspecの基本" class="md-nav__link md-nav__link--active">
+      Rspecの基本
     </a>
     
       
@@ -390,15 +402,83 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    バージョニングの大まかな意味合い
+  <a href="#describe-it-expect" class="md-nav__link">
+    describe / it / expect の役割を理解する
+  </a>
+  
+    <nav class="md-nav" aria-label="describe / it / expect の役割を理解する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describe" class="md-nav__link">
+    describe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#it" class="md-nav__link">
+    it
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expect" class="md-nav__link">
+    expect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context-before" class="md-nav__link">
+    context と before でもう少し便利に
+  </a>
+  
+    <nav class="md-nav" aria-label="context と before でもう少し便利に">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before" class="md-nav__link">
+    before
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#let" class="md-nav__link">
+    インスタンス変数のかわりに let を使う
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gem_1" class="md-nav__link">
-    インストールするgemのバージョン指定
+  <a href="#subject-1" class="md-nav__link">
+    subject を使ってテスト対象のオブジェクトを1箇所にまとめる
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#it-example-specify" class="md-nav__link">
+    it のエイリアス ＝ example と specify
   </a>
   
 </li>
@@ -407,18 +487,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rspec_basic/" title="Rspecの基本" class="md-nav__link">
-      Rspecの基本
-    </a>
   </li>
 
         
@@ -723,15 +791,83 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    バージョニングの大まかな意味合い
+  <a href="#describe-it-expect" class="md-nav__link">
+    describe / it / expect の役割を理解する
+  </a>
+  
+    <nav class="md-nav" aria-label="describe / it / expect の役割を理解する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describe" class="md-nav__link">
+    describe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#it" class="md-nav__link">
+    it
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expect" class="md-nav__link">
+    expect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context-before" class="md-nav__link">
+    context と before でもう少し便利に
+  </a>
+  
+    <nav class="md-nav" aria-label="context と before でもう少し便利に">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before" class="md-nav__link">
+    before
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#let" class="md-nav__link">
+    インスタンス変数のかわりに let を使う
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gem_1" class="md-nav__link">
-    インストールするgemのバージョン指定
+  <a href="#subject-1" class="md-nav__link">
+    subject を使ってテスト対象のオブジェクトを1箇所にまとめる
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#it-example-specify" class="md-nav__link">
+    it のエイリアス ＝ example と specify
   </a>
   
 </li>
@@ -753,7 +889,7 @@
 ></script>
               
                 
-                  <a href="https://github.com/setsunaMC/til/edit/master/docs/ruby/gem.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/setsunaMC/til/edit/master/docs/ruby/rspec_basic.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -761,24 +897,33 @@
                   
                 
                 
-                <h1 id="gem">Gemについて</h1>
-<p>参考：<a href="https://qiita.com/iguchi1124/items/3c17e1275b9bee4138d7">Qiita - Bundlerでgemを実用的に扱うためのまとめ</a></p>
-<h2 id="_1">バージョニングの大まかな意味合い</h2>
-<ul>
-<li>
-<p>PATCH 0.0.x
-APIの変更のない実装レベルの修正。バグフィックス等。</p>
-</li>
-<li>
-<p>MINOR 0.x.0
-後方互換性をもったAPIの変更など。新機能、新APIの実装等。</p>
-</li>
-<li>
-<p>MAJOR x.0.0
-アップデートするとユーザーの実装が動かなくなるような後方互換性のない変更を含む場合。</p>
-</li>
-</ul>
-<h2 id="gem_1">インストールするgemのバージョン指定</h2>
+                <h1 id="rspec">RSpecの基本的な構文や便利な機能を理解する</h1>
+<p>参考：https://qiita.com/jnchito/items/42193d066bd61c740612</p>
+<h2 id="describe-it-expect">describe / it / expect の役割を理解する</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">describe</span> <span class="s1">&#39;四則演算&#39;</span> <span class="k">do</span>
+  <span class="n">it</span> <span class="s1">&#39;1 + 1 は 2 になること&#39;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">2</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="describe">describe</h3>
+<p><code>describe</code>はテストのグループ化を宣言する。
+日本語にすると、「～を述べる」「～を説明する」「～を記述する」という意味。
+<code>describe '四則演算'</code>の文字列の部分はそれだけでなく<code>describe User</code>のようにクラスも渡せる。</p>
+<h3 id="it">it</h3>
+<p><code>it</code>はテストを<code>example</code>という単位にまとめる役割をします。
+<code>it do ... end</code>の中のエクスペクテーション（期待値と実際の値の比較）がすべてパスすれば、その<code>example</code>はパスしたことになる。</p>
+<h3 id="expect">expect</h3>
+<p><code>expect(X).to eq Y</code>で記述するのがエクスペクテーション。
+<code>expect</code>には「期待する」という意味があり、<code>expect(X).to eq Y</code>は「XがYに等しくなることを期待する」と読めます。
+よって、 expect(1 + 1).to eq 2 は「1 + 1 が 2 になることを期待する」テストになる。</p>
+<h2 id="context-before">context と before でもう少し便利に</h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -791,19 +936,151 @@ APIの変更のない実装レベルの修正。バグフィックス等。</p>
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">直接指定</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;1.2.3&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">3</span><span class="err">のみをつかう</span>
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">describe</span> <span class="no">User</span> <span class="k">do</span>
+  <span class="n">describe</span> <span class="s1">&#39;#greet&#39;</span> <span class="k">do</span>
+    <span class="n">before</span> <span class="k">do</span>
+      <span class="vi">@params</span> <span class="o">=</span> <span class="p">{</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;たろう&#39;</span> <span class="p">}</span>
+    <span class="k">end</span>
+    <span class="n">context</span> <span class="s1">&#39;12歳以下の場合&#39;</span> <span class="k">do</span>
+      <span class="n">it</span> <span class="s1">&#39;ひらがなで答えること&#39;</span> <span class="k">do</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="vi">@params</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="ss">age</span><span class="p">:</span> <span class="mi">12</span><span class="p">))</span>
+        <span class="n">expect</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">greet</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;ぼくはたろうだよ。&#39;</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+    <span class="n">context</span> <span class="s1">&#39;13歳以上の場合&#39;</span> <span class="k">do</span>
+      <span class="n">it</span> <span class="s1">&#39;漢字で答えること&#39;</span> <span class="k">do</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="vi">@params</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="ss">age</span><span class="p">:</span> <span class="mi">13</span><span class="p">))</span>
+        <span class="n">expect</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">greet</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;僕はたろうです。&#39;</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+</td></tr></table>
 
-<span class="err">超過</span> <span class="o">/</span> <span class="err">未満</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt; 1.2&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="err">を超過</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt; 1.2&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="err">未満</span>
+<h3 id="context">context</h3>
+<p><code>describe</code>以外にも<code>context</code>という機能でテストをグループ化することができる。
+どちらも機能的には同じだが、<code>context</code>は条件を分けたりするときに使うことが多い。
+日本語で「文脈」や「状況」の意味。</p>
+<h3 id="before">before</h3>
+<p><code>before do ... end</code>で囲まれた部分は<code>example</code>の実行前に毎回呼ばれる。
+<code>before</code>ブロックの中では、テストを実行する前の共通処理やデータのセットアップ等を行うことが多い。
+<code>describe</code>や<code>context</code>がネストしている場合は、親子関係に応じて<code>before</code>が順番に呼ばれる。(親→子の順番)</p>
+<h2 id="let">インスタンス変数のかわりに let を使う</h2>
+<p>letの利点について：https://qiita.com/jnchito/items/cdd9eef2ed193267c651</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">describe</span> <span class="no">User</span> <span class="k">do</span>
+  <span class="n">describe</span> <span class="s1">&#39;#greet&#39;</span> <span class="k">do</span>
+    <span class="n">let</span><span class="p">(</span><span class="ss">:user</span><span class="p">)</span> <span class="p">{</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="p">}</span>
+    <span class="n">let</span><span class="p">(</span><span class="ss">:params</span><span class="p">)</span> <span class="p">{</span> <span class="p">{</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;たろう&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="n">age</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="n">context</span> <span class="s1">&#39;12歳以下の場合&#39;</span> <span class="k">do</span>
+      <span class="n">let</span><span class="p">(</span><span class="ss">:age</span><span class="p">)</span> <span class="p">{</span> <span class="mi">12</span> <span class="p">}</span>
+      <span class="n">it</span> <span class="s1">&#39;ひらがなで答えること&#39;</span> <span class="k">do</span>
+        <span class="n">expect</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">greet</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;ぼくはたろうだよ。&#39;</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+    <span class="n">context</span> <span class="s1">&#39;13歳以上の場合&#39;</span> <span class="k">do</span>
+      <span class="n">let</span><span class="p">(</span><span class="ss">:age</span><span class="p">)</span> <span class="p">{</span> <span class="mi">13</span> <span class="p">}</span>
+      <span class="n">it</span> <span class="s1">&#39;漢字で答えること&#39;</span> <span class="k">do</span>
+        <span class="n">expect</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">greet</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;僕はたろうです。&#39;</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+</td></tr></table>
 
-<span class="err">以上</span> <span class="o">/</span> <span class="err">以下</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;= 1.2&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="err">以上</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;= 1.2&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="err">以下</span>
+<p><code>let(:foo) { ... }</code>のように書くと、<code>{ ... }</code>の中の値が<code>foo</code>として参照できる。
+<code>let</code>は「before + インスタンス変数」を使うときとは異なり、 <strong>遅延評価される</strong> という特徴がある。
+すなわち、<code>let</code>は必要になる瞬間まで呼び出されない。</p>
+<h2 id="subject-1">subject を使ってテスト対象のオブジェクトを1箇所にまとめる</h2>
+<p>日本語で「主語」や「対象」という意味。
+テスト対象のオブジェクト（またはメソッドの実行結果）が明確に一つに決まっている場合は、<code>subject</code>という機能を使うとテストコードが綺麗になる。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">describe</span> <span class="no">User</span> <span class="k">do</span>
+  <span class="n">describe</span> <span class="s1">&#39;#greet&#39;</span> <span class="k">do</span>
+    <span class="n">let</span><span class="p">(</span><span class="ss">:user</span><span class="p">)</span> <span class="p">{</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="p">}</span>
+    <span class="n">let</span><span class="p">(</span><span class="ss">:params</span><span class="p">)</span> <span class="p">{</span> <span class="p">{</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;たろう&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="n">age</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="n">subject</span> <span class="p">{</span> <span class="n">user</span><span class="o">.</span><span class="n">greet</span> <span class="p">}</span>
+    <span class="n">context</span> <span class="s1">&#39;12歳以下の場合&#39;</span> <span class="k">do</span>
+      <span class="n">let</span><span class="p">(</span><span class="ss">:age</span><span class="p">)</span> <span class="p">{</span> <span class="mi">12</span> <span class="p">}</span>
+      <span class="n">it</span> <span class="s1">&#39;ひらがなで答えること&#39;</span> <span class="k">do</span>
+        <span class="n">is_expected</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;ぼくはたろうだよ。&#39;</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+    <span class="n">context</span> <span class="s1">&#39;13歳以上の場合&#39;</span> <span class="k">do</span>
+      <span class="n">let</span><span class="p">(</span><span class="ss">:age</span><span class="p">)</span> <span class="p">{</span> <span class="mi">13</span> <span class="p">}</span>
+      <span class="n">it</span> <span class="p">{</span> <span class="n">is_expected</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s1">&#39;僕はたろうです。&#39;</span> <span class="p">}</span> <span class="c1"># itをこのように書くこともできる</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+</td></tr></table>
 
-<span class="err">よく使われるちょっと特殊なやつ</span>
-<span class="n">gem</span> <span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.2&#39;</span> <span class="o">#</span> <span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="err">以上かつ</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span><span class="err">未満</span>
+<p>今まで<code>expect(user.greet).to eq 'ぼくはたろうだよ。'</code>と書いていた部分が<code>is_expected.to eq 'ぼくはたろうだよ。'</code>と簡潔にできる。</p>
+<h2 id="it-example-specify">it のエイリアス ＝ example と specify</h2>
+<p>RSpecには<code>it</code>の他に全く同じ役割の<code>example</code>と<code>specify</code>がある。
+これら3つのメソッドはエイリアスの関係にあるので、以下のテストコードは内部的には全く同じ意味になる。
+なぜ3種類も同じメソッドがあるのかというと、自然な英文を作るため。
+日本語を使う場合は使い分けせずに<code>it</code>で統一したほうがいい。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">it</span> <span class="s1">&#39;1 + 1 は 2 になること&#39;</span> <span class="k">do</span>
+  <span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">2</span>
+<span class="k">end</span>
+
+<span class="n">specify</span> <span class="s1">&#39;1 + 1 は 2 になること&#39;</span> <span class="k">do</span>
+  <span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">2</span>
+<span class="k">end</span>
+
+<span class="n">example</span> <span class="s1">&#39;1 + 1 は 2 になること&#39;</span> <span class="k">do</span>
+  <span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">2</span>
+<span class="k">end</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -824,7 +1101,7 @@ APIの変更のない実装レベルの修正。バグフィックス等。</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="">
         
-          <a href="../basic/" title="Rubyの基礎" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gem/" title="Gemについて" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
             </div>
@@ -833,19 +1110,19 @@ APIの変更のない実装レベルの修正。バグフィックス等。</p>
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Rubyの基礎
+                Gemについて
               </div>
             </div>
           </a>
         
         
-          <a href="../rspec_basic/" title="Rspecの基本" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../rspec_matcher/" title="Rspecのマッチャーについて" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Rspecの基本
+                Rspecのマッチャーについて
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

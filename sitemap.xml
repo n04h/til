@@ -4,7 +4,55 @@
      <lastmod>2020-04-19</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://til.n04h.jp/ruby/basic/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://til.n04h.jp/ruby/gem/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/ruby/rspec_basic/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/ruby/rspec_matcher/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/swift/basic1/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/swift/basic2/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/swift/basic3/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/swift/basic4/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/docker/basic/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/web/redirect-status-code/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/api/twitch/get_channel_id_by_user/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/api/twitch/get_channel_info_by_channel_id/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/api/twitch/get_stream_by_channel_id/</loc>
      <lastmod>2020-04-19</lastmod>
      <changefreq>daily</changefreq>
     </url>

@@ -11,23 +11,23 @@
         <meta name="description" content="N04h Today I learned">
       
       
-        <link rel="canonical" href="https://til.n04h.jp/">
+        <link rel="canonical" href="https://til.n04h.jp/ruby/rspec_matcher/">
       
       
         <meta name="author" content="N04h">
       
-      <link rel="shortcut icon" href="assets/favicon.png">
+      <link rel="shortcut icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
     
     
       
-        <title>N04h Today I learned</title>
+        <title>Rspecのマッチャーについて - N04h Today I learned</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.75004596.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.75004596.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.a4b61a0c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a4b61a0c.min.css">
       
       
         
@@ -49,7 +49,7 @@
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800">
     
-      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
     
       
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#rspec" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -106,7 +106,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Rspecのマッチャーについて
             
           </span>
         </div>
@@ -168,14 +168,16 @@
         
           
 
-<nav class="md-tabs" aria-label="" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -187,7 +189,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="ruby/basic/" class="md-tabs__link">
+        <a href="../basic/" class="md-tabs__link md-tabs__link--active">
           Ruby
         </a>
       
@@ -200,7 +202,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="swift/basic1/" class="md-tabs__link">
+        <a href="../../swift/basic1/" class="md-tabs__link">
           Swift
         </a>
       
@@ -213,7 +215,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="docker/basic/" class="md-tabs__link">
+        <a href="../../docker/basic/" class="md-tabs__link">
           Docker
         </a>
       
@@ -226,7 +228,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="web/redirect-status-code/" class="md-tabs__link">
+        <a href="../../web/redirect-status-code/" class="md-tabs__link">
           Web
         </a>
       
@@ -243,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="api/twitch/get_channel_id_by_user/" class="md-tabs__link">
+        <a href="../../api/twitch/get_channel_id_by_user/" class="md-tabs__link">
           API
         </a>
       
@@ -300,20 +302,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
     
@@ -321,10 +314,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Ruby
@@ -348,7 +343,7 @@
 
 
   <li class="md-nav__item">
-    <a href="ruby/basic/" title="Rubyの基礎" class="md-nav__link">
+    <a href="../basic/" title="Rubyの基礎" class="md-nav__link">
       Rubyの基礎
     </a>
   </li>
@@ -360,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="ruby/gem/" title="Gemについて" class="md-nav__link">
+    <a href="../gem/" title="Gemについて" class="md-nav__link">
       Gemについて
     </a>
   </li>
@@ -372,7 +367,7 @@
 
 
   <li class="md-nav__item">
-    <a href="ruby/rspec_basic/" title="Rspecの基本" class="md-nav__link">
+    <a href="../rspec_basic/" title="Rspecの基本" class="md-nav__link">
       Rspecの基本
     </a>
   </li>
@@ -382,11 +377,81 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="ruby/rspec_matcher/" title="Rspecのマッチャーについて" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Rspecのマッチャーについて
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Rspecのマッチャーについて" class="md-nav__link md-nav__link--active">
       Rspecのマッチャーについて
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#matcher" class="md-nav__link">
+    マッチャ(matcher)とは
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-not_to-to_not" class="md-nav__link">
+    to / not_to / to_not
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    eq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#be" class="md-nav__link">
+    be
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#be_xxx-predicate" class="md-nav__link">
+    be_xxx (predicateマッチャ)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -426,7 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="swift/basic1/" title="Swiftの基礎1" class="md-nav__link">
+    <a href="../../swift/basic1/" title="Swiftの基礎1" class="md-nav__link">
       Swiftの基礎1
     </a>
   </li>
@@ -438,7 +503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="swift/basic2/" title="Swiftの基礎2" class="md-nav__link">
+    <a href="../../swift/basic2/" title="Swiftの基礎2" class="md-nav__link">
       Swiftの基礎2
     </a>
   </li>
@@ -450,7 +515,7 @@
 
 
   <li class="md-nav__item">
-    <a href="swift/basic3/" title="Swiftの基礎3" class="md-nav__link">
+    <a href="../../swift/basic3/" title="Swiftの基礎3" class="md-nav__link">
       Swiftの基礎3
     </a>
   </li>
@@ -462,7 +527,7 @@
 
 
   <li class="md-nav__item">
-    <a href="swift/basic4/" title="Swiftの基礎4" class="md-nav__link">
+    <a href="../../swift/basic4/" title="Swiftの基礎4" class="md-nav__link">
       Swiftの基礎4
     </a>
   </li>
@@ -504,7 +569,7 @@
 
 
   <li class="md-nav__item">
-    <a href="docker/basic/" title="Dockerについて" class="md-nav__link">
+    <a href="../../docker/basic/" title="Dockerについて" class="md-nav__link">
       Dockerについて
     </a>
   </li>
@@ -546,7 +611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="web/redirect-status-code/" title="リダイレクトのステータスコード" class="md-nav__link">
+    <a href="../../web/redirect-status-code/" title="リダイレクトのステータスコード" class="md-nav__link">
       リダイレクトのステータスコード
     </a>
   </li>
@@ -613,7 +678,7 @@
 
 
   <li class="md-nav__item">
-    <a href="api/twitch/get_channel_id_by_user/" title="get_channel_id_by_user" class="md-nav__link">
+    <a href="../../api/twitch/get_channel_id_by_user/" title="get_channel_id_by_user" class="md-nav__link">
       get_channel_id_by_user
     </a>
   </li>
@@ -625,7 +690,7 @@
 
 
   <li class="md-nav__item">
-    <a href="api/twitch/get_channel_info_by_channel_id/" title="get_channel_info_by_channel_id" class="md-nav__link">
+    <a href="../../api/twitch/get_channel_info_by_channel_id/" title="get_channel_info_by_channel_id" class="md-nav__link">
       get_channel_info_by_channel_id
     </a>
   </li>
@@ -637,7 +702,7 @@
 
 
   <li class="md-nav__item">
-    <a href="api/twitch/get_stream_by_channel_id/" title="get_stream_by_channel_id" class="md-nav__link">
+    <a href="../../api/twitch/get_stream_by_channel_id/" title="get_stream_by_channel_id" class="md-nav__link">
       get_stream_by_channel_id
     </a>
   </li>
@@ -670,6 +735,51 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#matcher" class="md-nav__link">
+    マッチャ(matcher)とは
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-not_to-to_not" class="md-nav__link">
+    to / not_to / to_not
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    eq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#be" class="md-nav__link">
+    be
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#be_xxx-predicate" class="md-nav__link">
+    be_xxx (predicateマッチャ)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -685,7 +795,7 @@
 ></script>
               
                 
-                  <a href="https://github.com/setsunaMC/til/edit/master/docs/index.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/setsunaMC/til/edit/master/docs/ruby/rspec_matcher.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -693,9 +803,49 @@
                   
                 
                 
-                <h1 id="_1">このサイトについて</h1>
-<p>このサイトはインプットした知識などをMarkdownに書き上げてアウトプットしたものを、
-MkDocsでサイト化したものです。</p>
+                <h1 id="rspec">RSpecのマッチャについて</h1>
+<p>参考：https://qiita.com/jnchito/items/2e79a1abe7cd8214caa5</p>
+<h2 id="matcher">マッチャ(matcher)とは</h2>
+<p>マッチャ（matcher）は「期待値と実際の値を比較して、一致した（もしくは一致しなかった）という結果を返すオブジェクト」のこと。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">3</span>
+<span class="n">expect</span><span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="kp">include</span> <span class="mi">2</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><code>eq</code>や<code>include</code>がマッチャにあたります。
+マッチャは自分自身に定義されている検証ルールに従って、実際の値（1 + 2 や [1, 2, 3]）と期待値（3 や 2）を比較し、ルールに合致しているかどうかを判断します。</p>
+<h2 id="to-not_to-to_not">to / not_to / to_not</h2>
+<p>「～であること」を期待する場合は<code>to</code>を使う。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">3</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>反対に「～ではないこと」を期待する場合は<code>not_to</code>もしくは<code>to_not</code>を使う。
+英語を使ってテストを作っているときに読みやすい方を使えば良いので、日本語を使ってテストを作っているときは<code>not_to</code>などに統一するとよい。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">not_to</span> <span class="n">eq</span> <span class="mi">1</span>
+<span class="c1"># または</span>
+<span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_not</span> <span class="n">eq</span> <span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><code>to</code>や<code>not_to</code>自体はマッチャではない。
+<code>to</code>や<code>not_to</code>はマッチャの実行結果を受け取って、テストをパスさせるか否かを判断するRSpecのメソッド。</p>
+<h2 id="eq">eq</h2>
+<p>期待値と実際の値が「等しい」かどうかを検証する場合は<code>eq</code>を使う。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">3</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="be">be</h2>
+<p><code>be</code>は等号・不等号と組み合わせて、値の大小を検証するときによく使われるマッチャ。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">expect</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="o">&gt;=</span> <span class="mi">3</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="be_xxx-predicate">be_xxx (predicateマッチャ)</h2>
                 
               
               
@@ -714,14 +864,28 @@ MkDocsでサイト化したものです。</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="">
         
+          <a href="../rspec_basic/" title="Rspecの基本" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Rspecの基本
+              </div>
+            </div>
+          </a>
         
-          <a href="ruby/basic/" title="Rubyの基礎" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../../swift/basic1/" title="Swiftの基礎1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Rubyの基礎
+                Swiftの基礎1
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -768,15 +932,15 @@ MkDocsでサイト化したものです。</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.d7126665.min.js"></script>
-      <script src="assets/javascripts/bundle.0f38e514.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
+      <script src="../../assets/javascripts/vendor.d7126665.min.js"></script>
+      <script src="../../assets/javascripts/bundle.0f38e514.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.58d22e8e.min.js"
+            worker: "../../assets/javascripts/worker/search.58d22e8e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
