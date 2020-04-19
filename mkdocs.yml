@@ -44,7 +44,10 @@ theme:
 nav:
   - "Home": "index.md"
   - "Ruby":
+      - "Rubyの基礎": "ruby/basic.md"
       - "Gemについて": "ruby/gem.md"
+      - "Rspecの基本": "ruby/rspec_basic.md"
+      - "Rspecのマッチャーについて": "ruby/rspec_matcher.md"
 
 # Options
 extra:
