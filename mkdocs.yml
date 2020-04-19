@@ -1,12 +1,12 @@
 # Project information
-site_name: "N04h til"
+site_name: "N04h Today I learned"
 site_description: "N04h Today I learned"
 site_author: "N04h"
 site_url: "https://til.n04h.jp/"
 
 # Repository
-repo_name: "Sateright/docs.sateright.com"
-repo_url: "https://github.com/Sateright/docs.sateright.com"
+repo_name: "setsunaMC/til"
+repo_url: "https://github.com/setsunaMC/til"
 
 # Copyright
 copyright: "Copyright &copy; N04h"
@@ -16,17 +16,20 @@ docs_dir: "til"
 theme:
   name: "material"
   language: "ja"
+  features:
+    - tabs
 
 # Navigation
 nav:
-  - Home: index.md
+  - "Home": "index.md"
+  - "RubyGem": "ruby/gem.md"
 
 # Options
 extra:
   social:
-    - type: "github"
+    - icon: "fontawesome/brands/github-alt"
       link: "https://github.com/setsunaMC"
-    - type: "twitter"
+    - icon: "fontawesome/brands/twitter"
       link: "https://twitter.com/Noah_stn"
   font:
     text: "Noto Sans JP"
@@ -46,3 +49,4 @@ markdown_extensions:
       server: http://www.plantuml.com/plantuml
   - codehilite:
       linenums: true
+      use_pygments: true
