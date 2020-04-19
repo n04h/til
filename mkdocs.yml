@@ -34,7 +34,8 @@ theme:
 # Navigation
 nav:
   - "Home": "index.md"
-  - "RubyGem": "ruby/gem.md"
+  - "Ruby":
+      - "Gemについて": "ruby/gem.md"
 
 # Options
 extra:
