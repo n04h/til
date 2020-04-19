@@ -1,15 +1,16 @@
 # Docker
 
-参考：https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81
-コマンドチートシート：https://qiita.com/voluntas/items/68c1fd04dd3d507d4083
+[参考:Qiita](https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81)
+
+[コマンドチートシート:Qiita](https://qiita.com/voluntas/items/68c1fd04dd3d507d4083)
 
 ## インストール
 
-Mac: https://docs.docker.com/docker-for-mac/install/
+Mac: [Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
 
 `docker version`でバージョンが表示されればインストールOK
 
-```
+```sh
 $ docker version
 Client: Docker Engine - Community
  Version:           18.09.2
@@ -33,28 +34,41 @@ Server: Docker Engine - Community
 
 ## nginxのコンテナを起動させる
 
-`docker run -d -p 80:80 --name {コンテナ名} nginx`
+```sh
+docker run -d -p 80:80 --name {コンテナ名} nginx
+```
 
 nginxを80番ポートで起動してくれる。
-docker imageがローカルで見つからない場合は、Docker Hubからpullしてくれる。
+`docker image`がローカルで見つからない場合は、Docker Hubからpullしてくれる。
 
 ### コンテナ一覧を見るとき
 
-`docker container ls`
+```sh
+docker container ls
+```
+
 `-a`オプションをつけると起動していない状態のコンテナ一覧を見れる
 
 ### コンテナを止めるとき
 
-`docker container stop {コンテナ名}`
+```sh
+docker container stop {コンテナ名}
+```
 
 ### コンテナを起動するとき
 
-`docker container start {コンテナ名}`
+```sh
+docker container start {コンテナ名}`
+```
 
 ### コンテナを削除するとき
 
-`docker container rm {コンテナ名}`
+```sh
+docker container rm {コンテナ名}
+```
 
 ### イメージを削除するとき
 
-`docker image rm {IDもしくは image name}`
+```sh
+docker image rm {IDもしくは image name}
+```
