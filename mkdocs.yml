@@ -52,6 +52,11 @@ nav:
       - "Dockerについて": "docker/basic.md"
   - "Web":
       - "リダイレクトのステータスコード": "web/redirect-status-code.md"
+  - "API":
+      - "Twitch":
+          - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
+          - "get_channel_info_by_channel_id": "api/twitch/get_channel_info_by_channel_id.md"
+          - "get_stream_by_channel_id": "api/twitch/get_stream_by_channel_id.md"
 
 # Options
 extra:
