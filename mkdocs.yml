@@ -4,6 +4,8 @@ site_description: "N04h Today I learned"
 site_author: "N04h"
 site_url: "https://til.n04h.jp/"
 
+google_analytics: ["UA-163951079-1", "til.n04h.jp"]
+
 # Repository
 repo_name: "setsunaMC/til"
 repo_url: "https://github.com/setsunaMC/til"
