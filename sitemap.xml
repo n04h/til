@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://til.n04h.jp/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://til.n04h.jp/ruby/gem/</loc>
+     <lastmod>2020-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
