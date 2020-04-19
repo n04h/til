@@ -1,9 +1,8 @@
-/* ***********************
- * Swiftの基本構文
- * 関数、クロージャ、クラス定義・オブジェクト
- * ***********************/
+# Swiftの基礎2
 
-// 関数（メソッド）の定義
+## 関数（メソッド）
+
+```swift
 func greet(expression: String, person: String) -> String {
   return "\(expression) \(person)."
 }
@@ -16,8 +15,11 @@ func greet(_ expression: String, person: String) -> String {
   return "\(expression) \(person)."
 }
 greet("Hello", person: "Mike")  // => "Hello Mike."
+```
 
-// クロージャ
+## クロージャ
+
+```swift
 func incrementer() -> ( () -> Int ) {
   var count = 0
   func increment() -> Int {
@@ -31,8 +33,11 @@ var counter = incrementer()
 counter()  // => 1
 counter()  // => 2
 counter()  // => 3
+```
 
-// このクロージャ機能により、Swiftではmap、filter、reduce等のメソッドに、引数として無名関数のブロックコードを渡して処理することができる
+このクロージャ機能により、Swiftではmap、filter、reduce等のメソッドに、引数として無名関数のブロックコードを渡して処理することができる
+
+```swift
 var numbers = [3, 7, 9, 12, 8, 5]
 // 配列の要素をすべて2倍にする
 numbers.map({ (number: Int) -> Int in return number * 2 })  // => [6, 14, 18, 24, 16, 10]
@@ -44,7 +49,11 @@ numbers.filter({ (number: Int) -> Bool in return number % 2 == 1 })  // => [3, 7
 numbers.reduce(0, { (total: Int, number: Int) -> Int in
   return total + number
 })  // => 44
+```
 
+## クラス
+
+```swift
 class MyApp {
   // Shapeクラスの定義
   class Shape {
@@ -100,3 +109,4 @@ square.area()  // => 56.25
 var triangle = MyApp.Triangle(name: "My Triangle", bottom: 10, height: 8)
 triangle.name    // => "My Triangle"
 triangle.area()  // => 40
+```

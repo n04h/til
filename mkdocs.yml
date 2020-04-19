@@ -48,6 +48,11 @@ nav:
       - "Gemについて": "ruby/gem.md"
       - "Rspecの基本": "ruby/rspec_basic.md"
       - "Rspecのマッチャーについて": "ruby/rspec_matcher.md"
+  - "Swift":
+      - "Swiftの基礎1": "swift/basic1.md"
+      - "Swiftの基礎2": "swift/basic2.md"
+      - "Swiftの基礎3": "swift/basic3.md"
+      - "Swiftの基礎4": "swift/basic4.md"
   - "Docker":
       - "Dockerについて": "docker/basic.md"
   - "Web":
