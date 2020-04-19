@@ -64,7 +64,6 @@ extra_css:
 
 # Extensions
 markdown_extensions:
-  - search
   - admonition
   - footnotes
   - fontawesome_markdown
