@@ -44,7 +44,24 @@ theme:
 nav:
   - "Home": "index.md"
   - "Ruby":
+      - "Rubyの基礎": "ruby/basic.md"
       - "Gemについて": "ruby/gem.md"
+      - "Rspecの基本": "ruby/rspec_basic.md"
+      - "Rspecのマッチャーについて": "ruby/rspec_matcher.md"
+  - "Swift":
+      - "Swiftの基礎1": "swift/basic1.md"
+      - "Swiftの基礎2": "swift/basic2.md"
+      - "Swiftの基礎3": "swift/basic3.md"
+      - "Swiftの基礎4": "swift/basic4.md"
+  - "Docker":
+      - "Dockerについて": "docker/basic.md"
+  - "Web":
+      - "リダイレクトのステータスコード": "web/redirect-status-code.md"
+  - "API":
+      - "Twitch":
+          - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
+          - "get_channel_info_by_channel_id": "api/twitch/get_channel_info_by_channel_id.md"
+          - "get_stream_by_channel_id": "api/twitch/get_stream_by_channel_id.md"
 
 # Options
 extra:
