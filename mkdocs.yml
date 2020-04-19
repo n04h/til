@@ -4,6 +4,8 @@ site_description: "N04h Today I learned"
 site_author: "N04h"
 site_url: "https://til.n04h.jp/"
 
+google_analytics: ["UA-163951079-1", "til.n04h.jp"]
+
 # Repository
 repo_name: "setsunaMC/til"
 repo_url: "https://github.com/setsunaMC/til"
@@ -14,15 +16,35 @@ copyright: "Copyright &copy; N04h"
 # Documentation and theme
 docs_dir: "til"
 theme:
-  name: "material"
+  name: null
+  custom_dir: "material"
   language: "ja"
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png
   features:
     - tabs
 
 # Navigation
 nav:
   - "Home": "index.md"
-  - "RubyGem": "ruby/gem.md"
+  - "Ruby":
+      - "Gemについて": "ruby/gem.md"
 
 # Options
 extra:
@@ -42,6 +64,7 @@ extra_css:
 
 # Extensions
 markdown_extensions:
+  - search
   - admonition
   - footnotes
   - fontawesome_markdown
