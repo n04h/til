@@ -50,6 +50,8 @@ nav:
       - "Rspecのマッチャーについて": "ruby/rspec_matcher.md"
   - "Docker":
       - "Dockerについて": "docker/basic.md"
+  - "Web":
+      - "リダイレクトのステータスコード": "web/redirect-status-code.md"
 
 # Options
 extra:
