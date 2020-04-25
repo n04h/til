@@ -57,6 +57,8 @@ nav:
       - "Dockerについて": "docker/basic.md"
   - "Web":
       - "リダイレクトのステータスコード": "web/redirect-status-code.md"
+  - "AWS":
+      - "請求アラートの設定": "aws/billing_preferences.md"
   - "API":
       - "Twitch":
           - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
