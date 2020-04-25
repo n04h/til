@@ -11,7 +11,7 @@
         <meta name="description" content="N04h Today I learned">
       
       
-        <link rel="canonical" href="https://til.n04h.jp/docker/basic/">
+        <link rel="canonical" href="https://til.n04h.jp/aws/billing_preferences/">
       
       
         <meta name="author" content="N04h">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Dockerについて - N04h Today I learned</title>
+        <title>請求アラートの設定 - N04h Today I learned</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#billing" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -106,7 +106,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Dockerについて
+              請求アラートの設定
             
           </span>
         </div>
@@ -215,7 +215,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../docker/basic/" class="md-tabs__link">
           Docker
         </a>
       
@@ -241,7 +241,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../aws/billing_preferences/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link md-tabs__link--active">
           AWS
         </a>
       
@@ -483,12 +483,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Docker
@@ -510,101 +508,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Dockerについて
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Dockerについて" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../docker/basic/" title="Dockerについて" class="md-nav__link">
       Dockerについて
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    インストール
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nginx" class="md-nav__link">
-    nginxのコンテナを起動させる
-  </a>
-  
-    <nav class="md-nav" aria-label="nginxのコンテナを起動させる">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    コンテナ一覧を見るとき
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    コンテナを止めるとき
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    コンテナを起動するとき
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    コンテナを削除するとき
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    イメージを削除するとき
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -659,10 +567,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       AWS
@@ -684,11 +594,94 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../aws/billing_preferences/" title="請求アラートの設定" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        請求アラートの設定
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="請求アラートの設定" class="md-nav__link md-nav__link--active">
       請求アラートの設定
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    料金アラートの設定
+  </a>
+  
+    <nav class="md-nav" aria-label="料金アラートの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 通知設定をひらく
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 請求設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. コスト管理設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 設定の保存
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cloudwatch" class="md-nav__link">
+    5. CloudWatch の設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -820,50 +813,43 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    インストール
+    料金アラートの設定
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nginx" class="md-nav__link">
-    nginxのコンテナを起動させる
-  </a>
-  
-    <nav class="md-nav" aria-label="nginxのコンテナを起動させる">
+    <nav class="md-nav" aria-label="料金アラートの設定">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    コンテナ一覧を見るとき
+  <a href="#1" class="md-nav__link">
+    1. 通知設定をひらく
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    コンテナを止めるとき
+  <a href="#2" class="md-nav__link">
+    2. 請求設定
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    コンテナを起動するとき
+  <a href="#3" class="md-nav__link">
+    3. コスト管理設定
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    コンテナを削除するとき
+  <a href="#4" class="md-nav__link">
+    4. 設定の保存
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    イメージを削除するとき
+  <a href="#5-cloudwatch" class="md-nav__link">
+    5. CloudWatch の設定
   </a>
   
 </li>
@@ -890,7 +876,7 @@
 ></script>
               
                 
-                  <a href="https://github.com/setsunaMC/til/edit/master/docs/docker/basic.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/setsunaMC/til/edit/master/docs/aws/billing_preferences.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -898,84 +884,48 @@
                   
                 
                 
-                <h1 id="docker">Docker</h1>
-<p><a href="https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81">参考:Qiita</a></p>
-<p><a href="https://qiita.com/voluntas/items/68c1fd04dd3d507d4083">コマンドチートシート:Qiita</a></p>
-<h2 id="_1">インストール</h2>
-<p>Mac: <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a></p>
-<p><code>docker version</code>でバージョンが表示されればインストールOK</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ docker version
-Client: Docker Engine - Community
- Version:           <span class="m">18</span>.09.2
- API version:       <span class="m">1</span>.39
- Go version:        go1.10.8
- Git commit:        <span class="m">6247962</span>
- Built:             Sun Feb <span class="m">10</span> <span class="m">04</span>:12:39 <span class="m">2019</span>
- OS/Arch:           darwin/amd64
- Experimental:      <span class="nb">false</span>
-
-Server: Docker Engine - Community
- Engine:
-  Version:          <span class="m">18</span>.09.2
-  API version:      <span class="m">1</span>.39 <span class="o">(</span>minimum version <span class="m">1</span>.12<span class="o">)</span>
-  Go version:       go1.10.6
-  Git commit:       <span class="m">6247962</span>
-  Built:            Sun Feb <span class="m">10</span> <span class="m">04</span>:13:06 <span class="m">2019</span>
-  OS/Arch:          linux/amd64
-  Experimental:     <span class="nb">false</span>
-</code></pre></div>
-</td></tr></table>
-
-<h2 id="nginx">nginxのコンテナを起動させる</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker run -d -p <span class="m">80</span>:80 --name <span class="o">{</span>コンテナ名<span class="o">}</span> nginx
-</code></pre></div>
-</td></tr></table>
-
-<p>nginxを80番ポートで起動してくれる。
-<code>docker image</code>がローカルで見つからない場合は、Docker Hubからpullしてくれる。</p>
-<h3 id="_2">コンテナ一覧を見るとき</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker container ls
-</code></pre></div>
-</td></tr></table>
-
-<p><code>-a</code>オプションをつけると起動していない状態のコンテナ一覧を見れる</p>
-<h3 id="_3">コンテナを止めるとき</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker container stop <span class="o">{</span>コンテナ名<span class="o">}</span>
-</code></pre></div>
-</td></tr></table>
-
-<h3 id="_4">コンテナを起動するとき</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker container start <span class="o">{</span>コンテナ名<span class="o">}</span><span class="sb">`</span>
-</code></pre></div>
-</td></tr></table>
-
-<h3 id="_5">コンテナを削除するとき</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker container rm <span class="o">{</span>コンテナ名<span class="o">}</span>
-</code></pre></div>
-</td></tr></table>
-
-<h3 id="_6">イメージを削除するとき</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker image rm <span class="o">{</span>IDもしくは image name<span class="o">}</span>
-</code></pre></div>
-</td></tr></table>
+                <h1 id="billing">Billing の設定</h1>
+<p>記事作成日：2020/4/25</p>
+<h2 id="_1">料金アラートの設定</h2>
+<p>AWS の利用料金が設定金額を超えたら通知することで使い過ぎを防ぐ</p>
+<h3 id="1">1. 通知設定をひらく</h3>
+<p>右上のメニュー &gt; マイ請求ダッシュボード &gt; 設定 &gt; Billing の設定 を開く</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80268671-46fef180-86e4-11ea-80f1-611ad7a9c046.png" /></p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80268685-6d249180-86e4-11ea-9a91-dc15df4b79b3.png" /></p>
+<h3 id="2">2. 請求設定</h3>
+<p><code>電子メールで PDF 版請求書を受け取る</code> にチェックをする</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80268842-a01b5500-86e5-11ea-8e8e-3041d77f0416.png" /></p>
+<h3 id="3">3. コスト管理設定</h3>
+<ul>
+<li><code>無料利用枠の使用のアラートの受信</code> にチェックを入れる
+  <img alt="image" src="https://user-images.githubusercontent.com/10251347/80268856-bc1ef680-86e5-11ea-9e8f-c54c852d64c7.png" /></li>
+<li><code>請求アラートを受け取る</code> にチェックを入れる
+  <img alt="image" src="https://user-images.githubusercontent.com/10251347/80268864-d658d480-86e5-11ea-83eb-0e13b248507a.png" /></li>
+</ul>
+<h3 id="4">4. 設定の保存</h3>
+<p><code>設定の保存</code> ボタンを押下</p>
+<h3 id="5-cloudwatch">5. CloudWatch の設定</h3>
+<ol>
+<li><code>請求アラートを受け取る</code> の説明に <code>請求アラートを管理する</code> というリンクがあるので開く</li>
+</ol>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80268864-d658d480-86e5-11ea-83eb-0e13b248507a.png" /></p>
+<ol>
+<li>メニューから<code>請求</code>を開く</li>
+</ol>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80268923-5c751b00-86e6-11ea-96c3-b858ef20d52a.png" /></p>
+<ol>
+<li><code>アラートの作成</code>ボタンを押下</li>
+<li>条件を設定</li>
+</ol>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80269043-57fd3200-86e7-11ea-873b-77e87173d77e.png" /></p>
+<ol>
+<li>通知の設定(新しい SNS トピックを作成)</li>
+</ol>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10251347/80269145-0b662680-86e8-11ea-8585-7971541a949a.png" /></p>
+<ol>
+<li>名前と説明もテキトーに設定</li>
+<li>設定が終わると通知の設定で登録したメアドに確認メールが飛ぶのでその中の<code>Confirm subscription</code>を開いて確認する</li>
+</ol>
                 
               
               
@@ -994,7 +944,7 @@ Server: Docker Engine - Community
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="">
         
-          <a href="../../swift/basic4/" title="Swiftの基礎4" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../web/redirect-status-code/" title="リダイレクトのステータスコード" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
             </div>
@@ -1003,19 +953,19 @@ Server: Docker Engine - Community
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Swiftの基礎4
+                リダイレクトのステータスコード
               </div>
             </div>
           </a>
         
         
-          <a href="../../web/redirect-status-code/" title="リダイレクトのステータスコード" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../api/twitch/get_channel_id_by_user/" title="get_channel_id_by_user" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                リダイレクトのステータスコード
+                get_channel_id_by_user
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
