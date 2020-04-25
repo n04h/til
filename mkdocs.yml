@@ -59,6 +59,9 @@ nav:
       - "リダイレクトのステータスコード": "web/redirect-status-code.md"
   - "AWS":
       - "請求アラートの設定": "aws/billing_preferences.md"
+      - "VPCの作成": "aws/vpc.md"
+      - "EC2の作成": "aws/ec2.md"
+      - "RDSの作成": "aws/rds.md"
   - "API":
       - "Twitch":
           - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
