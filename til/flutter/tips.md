@@ -39,3 +39,9 @@ void main() {
 ```
 
 ※Dart のプラグインを入れていることが前提
+
+## エクスプレッション構文・アロー構文の変換
+
+`main()`の後ろで[Option + Enter]を押下すると以下のようなプルダウンが出て変換できる
+
+![image](images/expression_arrow_convert.png)
