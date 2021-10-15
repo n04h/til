@@ -7,8 +7,8 @@ site_url: "https://til.n04h.jp/"
 google_analytics: ["UA-163951079-1", "til.n04h.jp"]
 
 # Repository
-repo_name: "setsunaMC/til"
-repo_url: "https://github.com/setsunaMC/til"
+repo_name: "n04h/til"
+repo_url: "https://github.com/n04h/til"
 
 # Copyright
 copyright: "Copyright &copy; N04h"
@@ -72,7 +72,7 @@ nav:
 extra:
   social:
     - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/setsunaMC"
+      link: "https://github.com/n04h"
     - icon: "fontawesome/brands/twitter"
       link: "https://twitter.com/Noah_stn"
   font:
