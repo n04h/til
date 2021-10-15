@@ -43,6 +43,18 @@ theme:
 # Navigation
 nav:
   - "Home": "index.md"
+  - "API":
+      - "Twitch":
+          - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
+          - "get_channel_info_by_channel_id": "api/twitch/get_channel_info_by_channel_id.md"
+          - "get_stream_by_channel_id": "api/twitch/get_stream_by_channel_id.md"
+  - "AWS":
+      - "請求アラートの設定": "aws/billing_preferences.md"
+      - "VPCの作成": "aws/vpc.md"
+      - "EC2の作成": "aws/ec2.md"
+      - "RDSの作成": "aws/rds.md"
+  - "Docker":
+      - "Dockerについて": "docker/basic.md"
   - "Ruby":
       - "Rubyの基礎": "ruby/basic.md"
       - "Gemについて": "ruby/gem.md"
@@ -53,17 +65,8 @@ nav:
       - "Swiftの基礎2": "swift/basic2.md"
       - "Swiftの基礎3": "swift/basic3.md"
       - "Swiftの基礎4": "swift/basic4.md"
-  - "Docker":
-      - "Dockerについて": "docker/basic.md"
   - "Web":
       - "リダイレクトのステータスコード": "web/redirect-status-code.md"
-  - "AWS":
-      - "請求アラートの設定": "aws/billing_preferences.md"
-  - "API":
-      - "Twitch":
-          - "get_channel_id_by_user": "api/twitch/get_channel_id_by_user.md"
-          - "get_channel_info_by_channel_id": "api/twitch/get_channel_info_by_channel_id.md"
-          - "get_stream_by_channel_id": "api/twitch/get_stream_by_channel_id.md"
 
 # Options
 extra:
